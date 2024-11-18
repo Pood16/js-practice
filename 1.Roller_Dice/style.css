@@ -1,0 +1,78 @@
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    
+    margin-top: 100px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0px 26px 58px 0px rgba(0,0,0,0.22),
+0px 5px 14px 0px rgba(0,0,0,0.18);
+border-radius: 10px;
+}
+h1, h3 {
+    margin: 5px;
+}
+h1 {
+    color: red;
+}
+h3 {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+}
+@media(max-width: 768px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: auto;
+        place-items: center;
+        gap: 5px;
+    }
+    button{
+        width: 150px;
+    }
+}
+label {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+input{
+    width: 100;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color:rgba(0, 0, 0, 0.6);
+    outline: none;
+
+}
+button{
+    padding: 5px 10px;  
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: hsl(210, 100%, 50%);
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(210, 100%, 60%);
+}
+button:active{
+    background-color: hsl(210, 100%, 70%);
+}
+#dice-value {
+    margin : 15px;
+}
+#dice-face img{
+    width: 100px;
+    margin: 5px;
+}
